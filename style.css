@@ -113,18 +113,27 @@ img, video {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logo span {
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logo-text span {
   color: var(--color-primary);
 }
 
@@ -573,13 +582,43 @@ img, video {
   .menu-toggle {
     display: block;
   }
+
+  .nav-actions .btn {
+    display: none; /* Hide Call Us button on mobile to fix crowding */
+  }
+
+  .logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .logo-img {
+    height: 35px;
+  }
+
+  .hero {
+    padding-top: 140px; /* Push hero content down below header */
+  }
   
   .hero h1 {
     font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-bottom: 30px;
   }
   
   .hero-cta {
     flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    margin-bottom: 10px;
   }
   
   .video-section-content h2 {
